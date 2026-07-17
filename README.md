@@ -210,3 +210,136 @@ The following regression algorithms were evaluated during model selection:
 - CatBoost Regressor
 
 Hyperparameter tuning was performed on the best-performing models using GridSearchCV to identify the optimal configuration.
+
+---
+
+# Model Performance
+
+After evaluating multiple regression algorithms, **Random Forest Regressor** achieved the best overall performance and was selected as the final model.
+
+## Final Model Performance
+
+| Metric | Value |
+|---------|------:|
+| Best Model | Random Forest Regressor |
+| R² Score | **0.9957** |
+| MAE | **2.17** |
+| RMSE | **3.94** |
+| Cross Validation R² | **0.9970** |
+| Training Time | **60.42 sec** |
+| Prediction Time | **0.125 sec** |
+
+---
+
+# Model Comparison
+
+Multiple regression algorithms were evaluated before selecting the final model.
+
+| Model | Status |
+|--------|--------|
+| Linear Regression | Evaluated |
+| Ridge Regression | Evaluated |
+| Lasso Regression | Evaluated |
+| Decision Tree Regressor | Evaluated |
+| Random Forest Regressor | **Selected** |
+| Extra Trees Regressor | Evaluated |
+| Gradient Boosting Regressor | Evaluated |
+| AdaBoost Regressor | Evaluated |
+| XGBoost Regressor | Evaluated |
+| CatBoost Regressor | Evaluated |
+
+Random Forest Regressor demonstrated the best balance between prediction accuracy and model stability.
+
+---
+
+# Model Validation
+
+The final model was validated using multiple evaluation techniques.
+
+- Train/Test Split
+- 5-Fold Cross Validation
+- Overfitting Analysis
+- Residual Analysis
+- SHAP Explainability
+
+### Cross Validation Results
+
+- Average R² Score: **0.9970**
+- Standard Deviation: **0.0006**
+
+### Generalization Check
+
+| Metric | Value |
+|---------|------:|
+| Training R² | 0.9995 |
+| Testing R² | 0.9957 |
+| Difference | 0.0038 |
+
+The small difference between training and testing performance indicates that the model generalizes well and does not exhibit significant overfitting.
+
+---
+
+# Dashboard
+
+An interactive Plotly dashboard was developed to visualize model performance and predictions.
+
+The dashboard includes:
+
+- Model Performance Metrics
+- Model Comparison
+- Actual vs Predicted Values
+- Residual Analysis
+- Feature Importance
+
+### Dashboard Preview
+
+> Add your dashboard screenshot after uploading it.
+
+```text
+images/dashboard.png
+```
+
+Example Markdown after uploading:
+
+```markdown
+![Dashboard](images/dashboard.png)
+```
+
+---
+
+# Visualizations
+
+The project includes several visualizations for exploratory analysis and model evaluation.
+
+| Visualization | Purpose |
+|--------------|---------|
+| Distribution Plots | Understand feature distributions |
+| Correlation Heatmap | Identify feature relationships |
+| Actual vs Predicted | Evaluate prediction accuracy |
+| Residual Plot | Analyze prediction errors |
+| Feature Importance | Identify influential variables |
+| SHAP Summary Plot | Explain model predictions |
+
+Example image references:
+
+```markdown
+![Model Comparison](images/model_comparison.png)
+
+![Feature Importance](images/feature_importance.png)
+
+![Residual Plot](images/residual_plot.png)
+```
+
+---
+
+# Business Insights
+
+The analysis indicates that fuel consumption and engine characteristics are the primary factors influencing vehicle CO₂ emissions.
+
+The developed model can support:
+
+- Vehicle manufacturers during design optimization.
+- Environmental agencies in preliminary emission assessment.
+- Consumers comparing environmental impact across vehicle types.
+- Sustainability initiatives through data-driven emission estimation.
+
