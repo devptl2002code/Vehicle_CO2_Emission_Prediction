@@ -293,8 +293,7 @@ The dashboard includes:
 
 ### Dashboard Preview
 
-<img width="1400" height="900" alt="dashboard" src="https://github.com/user-attachments/assets/c835e058-024a-4c8c-b389-40aadd0ef5b4" />
-
+<img width="2476" height="494" alt="image" src="https://github.com/user-attachments/assets/b74ba229-888b-4a3e-a4f6-156d60109bad" />
 
 ---
 
@@ -313,13 +312,8 @@ The project includes several visualizations for exploratory analysis and model e
 
 Example image references:
 
-```markdown
-![Model Comparison](images/model_comparison.png)
+<img width="1400" height="900" alt="dashboard" src="https://github.com/user-attachments/assets/c835e058-024a-4c8c-b389-40aadd0ef5b4" />
 
-![Feature Importance](images/feature_importance.png)
-
-![Residual Plot](images/residual_plot.png)
-```
 
 ---
 
