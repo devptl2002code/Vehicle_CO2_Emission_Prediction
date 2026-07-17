@@ -328,3 +328,118 @@ The developed model can support:
 - Consumers comparing environmental impact across vehicle types.
 - Sustainability initiatives through data-driven emission estimation.
 
+
+---
+
+# Project Structure
+
+```text
+Vehicle_CO2_Emission_Prediction/
+│
+├── Vehicle_CO2_Emission_Prediction.ipynb
+├── README.md
+├── requirements.txt
+├── LICENSE
+├── .gitignore
+├── co2.csv
+│
+├── images/
+│   ├── dashboard.png
+│
+└── artifacts/
+    └── vehicle_co2_prediction_model.pkl
+```
+
+---
+
+# Installation
+
+## Clone the Repository
+
+```bash
+git clone https://github.com/devptl2002code/Vehicle_CO2_Emission_Prediction.git
+```
+
+## Navigate to the Project
+
+```bash
+cd Vehicle_CO2_Emission_Prediction
+```
+
+## Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+# How to Run
+
+1. Clone or download this repository.
+2. Install the required Python packages using `requirements.txt`.
+3. Open the notebook in Google Colab or Jupyter Notebook.
+4. Place the dataset (`co2.csv`) in the project directory (or update the file path if needed).
+5. Run all notebook cells from top to bottom.
+6. Review the evaluation metrics, SHAP explainability, and Plotly dashboard.
+
+---
+
+# Results Summary
+
+- Best Model: **Random Forest Regressor**
+- R² Score: **0.9957**
+- MAE: **2.17**
+- RMSE: **3.94**
+- Cross Validation R²: **0.9970**
+- Model demonstrated excellent generalization with minimal overfitting.
+- SHAP explainability identified fuel consumption and engine characteristics as the most influential features.
+
+---
+
+# Limitations
+
+- The dataset contains approximately **6,282 vehicle records**, which is smaller than the recommended 10,000+ records for this capstone guideline.
+- Predictions are limited to the vehicle categories represented in the dataset.
+- Driving behavior, weather conditions, road conditions, and vehicle maintenance are not considered.
+- The model should be used as a decision-support tool and not as a replacement for official emissions testing.
+
+---
+
+# Future Improvements
+
+- Train the model with a larger and more recent dataset.
+- Include hybrid and electric vehicle data.
+- Evaluate additional ensemble and deep learning models.
+- Deploy the model as a web application using Streamlit or Flask.
+- Expose the trained model through a REST API.
+- Automate model retraining with updated datasets.
+
+---
+
+# Repository Contents
+
+- End-to-end Machine Learning workflow
+- Data preprocessing pipeline
+- Exploratory Data Analysis (EDA)
+- Feature engineering
+- Model comparison
+- Hyperparameter tuning
+- Model evaluation
+- SHAP explainability
+- Interactive Plotly dashboard
+- Business insights and recommendations
+
+---
+
+# Author
+
+**Dev Patel**
+
+GitHub: https://github.com/devptl2002code
+
+---
+
+# License
+
+This project is licensed under the MIT License. See the `LICENSE` file for details.
