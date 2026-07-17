@@ -79,3 +79,134 @@ Kaggle
 | Machine Learning | Scikit-Learn |
 | Explainable AI | SHAP |
 | Hyperparameter Tuning | GridSearchCV |
+
+---
+
+# Project Workflow
+
+The project follows a structured Machine Learning workflow from raw data to business insights.
+
+```text
+                Raw Dataset
+                     │
+                     ▼
+            Data Understanding
+                     │
+                     ▼
+              Data Cleaning
+                     │
+                     ▼
+        Exploratory Data Analysis
+                     │
+                     ▼
+          Feature Engineering
+                     │
+                     ▼
+          Data Preprocessing
+                     │
+                     ▼
+          Train-Test Split
+                     │
+                     ▼
+        Regression Model Training
+                     │
+                     ▼
+       Hyperparameter Tuning
+                     │
+                     ▼
+         Model Evaluation
+                     │
+                     ▼
+        SHAP Explainability
+                     │
+                     ▼
+      Interactive Plotly Dashboard
+                     │
+                     ▼
+         Business Recommendations
+```
+
+---
+
+# Data Preprocessing
+
+The following preprocessing steps were performed before training the machine learning models:
+
+- Removed duplicate records (if present)
+- Checked for missing values
+- Identified numerical and categorical features
+- Applied One-Hot Encoding to categorical features
+- Standardized numerical features where appropriate
+- Created a preprocessing pipeline using `ColumnTransformer`
+- Combined preprocessing and model training using Scikit-learn `Pipeline`
+
+---
+
+# Exploratory Data Analysis (EDA)
+
+EDA was performed to better understand the dataset and identify relationships between variables.
+
+The following visualizations were created:
+
+- Dataset overview
+- Missing value analysis
+- Distribution of CO₂ emissions
+- Vehicle class distribution
+- Fuel type distribution
+- Correlation heatmap
+- Feature relationships
+- Engine size vs CO₂ emissions
+- Fuel consumption vs CO₂ emissions
+
+Key findings from EDA:
+
+- Fuel Consumption (Combined) has the strongest relationship with CO₂ emissions.
+- Larger engine sizes generally produce higher CO₂ emissions.
+- Vehicles with more cylinders tend to emit more CO₂.
+- Fuel consumption is the primary driver of vehicle emissions.
+
+---
+
+# Feature Engineering
+
+The following features were used for model development:
+
+### Numerical Features
+
+- Engine Size (L)
+- Cylinders
+- Fuel Consumption City (L/100 km)
+- Fuel Consumption Highway (L/100 km)
+- Fuel Consumption Combined (L/100 km)
+- Fuel Consumption Combined (MPG)
+
+### Categorical Features
+
+- Make
+- Model
+- Vehicle Class
+- Transmission
+- Fuel Type
+
+### Target Variable
+
+- CO₂ Emissions (g/km)
+
+---
+
+# Machine Learning Models Evaluated
+
+The following regression algorithms were evaluated during model selection:
+
+- Linear Regression
+- Ridge Regression
+- Lasso Regression
+- Decision Tree Regressor
+- Random Forest Regressor
+- Extra Trees Regressor
+- Gradient Boosting Regressor
+- AdaBoost Regressor
+- XGBoost Regressor
+- CatBoost Regressor
+
+Hyperparameter tuning was performed on the best-performing models using GridSearchCV to identify the optimal configuration.
