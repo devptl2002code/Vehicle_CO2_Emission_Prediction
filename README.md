@@ -293,17 +293,8 @@ The dashboard includes:
 
 ### Dashboard Preview
 
-> Add your dashboard screenshot after uploading it.
+<img width="1400" height="900" alt="dashboard" src="https://github.com/user-attachments/assets/c835e058-024a-4c8c-b389-40aadd0ef5b4" />
 
-```text
-images/dashboard.png
-```
-
-Example Markdown after uploading:
-
-```markdown
-![Dashboard](images/dashboard.png)
-```
 
 ---
 
